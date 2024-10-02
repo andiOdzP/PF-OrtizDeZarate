@@ -1,0 +1,132 @@
+
+
+
+/*-------------------------LOGO------------------------------*/
+
+header {
+  /*
+    min-width: 300px; establesco la anchura minima que puede tener.
+    overflow: hidden; evito el "colapso de márgenes" (margin collapse), 
+    el logo desplazaba el header hacia abajo  
+    */
+  min-width: $minWidth;
+  overflow: hidden;
+  padding: 0px !important;
+
+
+  h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #383838;
+    font-style: italic;
+  }
+
+
+  nav {
+    background-color: rgb(240, 240, 240);
+    padding: 7px 0;
+    min-width: 250px ;
+  }
+
+}
+
+
+
+
+.logo {
+  /*ponemos el mismo min-with que en el menu para que se mantenga tanto el logo como el menu centrado*/
+  margin: 50px 0;
+  text-align: center;
+}
+
+.logo-gif {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -20px;
+  /*acerca mas el logo al titulo*/
+}
+
+
+
+
+
+
+/*-------------------------MENU-----------------------------*/
+.menu {
+  /*centro la ul y le marco el maximo que se puede estirar*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  max-width: 700px;
+
+  /*hago q la ul sea flex y separo los li*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+/*--------------------------inicio pagina en gris-------------------------------*/
+.menu__pagina {
+
+  div {
+    display: inline-block;
+    
+    align-self: initial;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px 2px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    @include decoracion_punto($colorPunto, $sombraPunto);
+  }
+
+  a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  &:hover {
+
+    div {
+      scale: 1.2;
+      @include decoracion_punto($colorPuntoHover, $sombraPuntoUbicado);
+    }
+
+    a {
+      color: rgb(97, 97, 97);
+    }
+
+  }
+
+}
+
+
+/*--------------------------fin pagina en gris-------------------------------*/
+
+/*--------------------------inicio pagina ubicado-------------------------------*/
+
+
+.menu__pagina--ubicado {
+
+  div {
+    display: inline-block;
+    
+    align-self: initial;
+    width: 8px;
+    height: 8px;
+    margin: 0 7px 2px;
+    border-radius: 50%;
+    @include decoracion_punto($colorPuntoUbicado, $sombraPuntoUbicado);
+  }
+
+  a {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+/*--------------------------fin pagina ubicado-------------------------------*/

@@ -1,0 +1,46 @@
+.seccion-album {
+    background-color: rgb(66, 124, 161);
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+  }
+  
+  .seccion-album-contorno {
+    background-color: rgb(240, 240, 240);
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+  }
+  
+  .seccion-album-titulo {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .seccion-album p {
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .seccion-album-img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 20px 0;
+  }
+  
+  .seccion-informacion {
+    max-width: 1000px;
+    margin: 10px auto 0 auto;
+    padding: 15px 0 0 0;
+  }
+  

@@ -1,0 +1,105 @@
+.seccion-tickets {
+  background-color: $colorSecundario;
+  max-width: 800px;
+  width: 95%;
+  margin: 0px auto 50px auto;
+  padding: 10px 0;
+}
+
+.seccion-tickets p {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+
+
+.seccion-tickets-titulo {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+form {
+  width: 95%;
+  margin: 0 auto;
+
+
+  fieldset {
+    border: 0;
+    margin: 30px 0;
+  }
+
+
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input {
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid #0a0a23;
+    color: #0a0a23;
+  }
+
+  input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: gold;
+    max-width: 300px;
+  }
+
+}
+
+.button__back {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: $colorSecundario;
+
+  text-decoration: none;
+  color: inherit;
+
+  svg {
+    height: 26px;
+    width: 26px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+
+
+  }
+
+
+  &:hover svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+  }
+
+  &:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+  }
+
+}

@@ -1,0 +1,58 @@
+
+.seccion__album {
+  
+    max-width: 1230px;
+    width: 95%;
+    padding: 50px 0;
+    margin: auto;
+  
+  }
+
+.contenedor__albums{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card__album{
+    max-width: 300px;
+    overflow: hidden;
+    border: 1px solid black;
+    
+      
+}
+
+.card__album__contenedor__img{
+    position: relative;
+    overflow: hidden;
+}
+
+.card__album__img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.card__album__contenido{
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.card__album__titulo{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Añade puntos suspensivos */
+
+}
+
+.card__album__artista{
+    color: #777;
+    margin: 0;
+}

@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+$fondositio:#fafafa;
+$minWidth:250px;
+$colorSecundario:rgb(240, 240, 240);
+$colorPunto:grey;
+$colorPuntoHover:rgb(153, 121, 51);
+$colorPuntoUbicado:gold;
+$sombraPunto:0 2px 5px rgb(21, 21, 21);
+$sombraPuntoUbicado:0 2px 7px rgb(98, 83, 0);
+
+@mixin decoracion_punto($bc, $bs){
+  background-color: $bc;
+  box-shadow: $bs;
+}
+
+
+$y:2;
+@for $i from 1 through 6{
+  .fSize-#{$i}{
+    font-size: 8px + $y;
+  }
+  $y:$y + 2;
+}
+
+
+/*variables para el slider*/
+:root {
+  --width: 350px;
+  --height: 350px;
+  --quantity: 5;
+}
+
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: $fondositio;
+}
+
+
+main {
+  min-width: $minWidth;
+  overflow: hidden;
+}
+
+
+.no-padding{
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+@import "footer";
+@import "menu";
+@import "inicio";
+@import "ticket";
+@import "eventos";
+@import "album";
+@import "biblioteca";
+
+
+
+
+
+
+
+
+@media (width < 1200px) {
+  :root {
+    --width: 250px;
+    --height: 250px;
+  }
+}
+
+
+
+@media (width < 480px) {
+
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    /*le pongo z-index al nav para que quede por arriba del slider*/
+
+  }
+
+
+  .menu__pagina {
+
+    div {
+      width: 7px;
+      height: 7px;
+      margin: 0 7px 2px;
+    }
+  
+    a {
+      font-size: 12px;
+    }
+  
+  
+  }
+
+  .menu__pagina--ubicado {
+
+    div {
+      width: 7px;
+      height: 7px;
+      margin: 0 7px 2px;
+    }
+  
+    a {
+      font-size: 12px;
+    }
+
+  }
+
+
+
+  .artista {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+
+  .artista-imagen {
+    max-height: none;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .artista-imagen img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .artista-info{
+    position: relative;
+    height: auto;
+    padding-left: 5px;
+  }
+  
+  .artista-contenido {
+    overflow: auto;
+    padding: 5px;
+    height: auto;
+  }
+
+
+  legend{
+    font-size: 18px;
+  }
+
+
+  input {
+    font-size: 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 0.8rem;
+  }
+
+label {
+  font-size: 12px;
+}
+
+footer{
+  padding-bottom: 60px;
+}
+
+  
+  :root {
+    --width: 200px;
+    --height: 200px;
+  }
+}
+
+
+@media (width < 350px) {
+  :root {
+    --width: 150px;
+    --height: 150px;
+  }
+}

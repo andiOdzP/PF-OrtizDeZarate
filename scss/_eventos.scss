@@ -1,0 +1,42 @@
+/*-------------seccion evento---------------*/
+
+
+.seccion-eventos {
+    background-color: rgb(240, 240, 240);
+    max-width: 1000px;
+    width: 95%;
+    height: 100vh;
+    padding: 0;
+    margin: 50px auto;
+    padding-top: 50px;
+  
+  }
+  
+  .evento {
+    background-color: #a0aeae;
+    width: 90%;
+    height: 300px;
+    border-radius: 25px;
+    margin: 0 auto 5px auto;
+  }
+  
+  .evento:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contenedor--grid{
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px,1fr)
+    );
+    gap: 32px 10px;
+    max-width: 1500px;
+  }
+  
+  .contenedor--grid img{
+    width: 100%;
+    height: auto;
+  }
+  
+  /*---------------fin seccion evento----------------------*/
